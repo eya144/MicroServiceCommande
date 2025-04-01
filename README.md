@@ -62,4 +62,4 @@ PUT localhost:8091/commandes/{id} : Met à jour les informations d'une commande 
 
 DELETE localhost:8091/commandes/{id} : Supprime une commande par son ID.
 
-GET localhost:8091/commandes/statut/{statut} : Filtre les commandes en fonction de leur statut (par exemple, "EnCours", "Livré").
+GET localhost:8091/commandes/{statut} : Filtre les commandes en fonction de leur statut (par exemple, "EnCours", "Livré").
