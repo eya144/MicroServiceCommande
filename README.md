@@ -1,4 +1,7 @@
 Realisé par eya maamouri
+https://github.com/eya144/MicroServiceCommande.git
+https://github.com/eya144/EurekaMicroServiceCommande.git
+https://github.com/eya144/ApiGatewayMicroServiceCommande.git
 
 Microservice Commande avec API Gateway, Eureka et Keycloak Ce projet implémente un système de gestion des commandes basé sur une architecture de microservices. L'objectif est de fournir une solution robuste, sécurisée et scalable pour gérer les commandes dans un environnement de gestion de projet de construction. Le projet utilise les technologies Spring Boot, Spring Cloud Gateway, Eureka, et Keycloak pour assurer la communication entre les microservices, la découverte des services, et l'accès sécurisé.
 
