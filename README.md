@@ -55,14 +55,15 @@ L'architecture basée sur des microservices permet de déployer les services de 
 
 La découverte dynamique des services via Eureka garantit que même si un service est redémarré ou mis à l'échelle, les autres services peuvent toujours le trouver et interagir avec lui.
 
-Exemples d'API disponibles : POST localhost:8091/commandes : Crée une nouvelle commande.
+Exemples d'API disponibles : une commande par son ID.
 
-GET localhost:8091/commandes : Récupère toutes les commandes.
+http://localhost:8091/commandes ==> get la liste de commande
+http://localhost:8091/commandes/getCommandeById/1   ==> get commande par id 
+localhost:8091/commandes/add   ==>  creer une commande
+localhost:8091/commandes/statut/EnCours  ==>recherche par statut de commande  Filtre les commandes en fonction de leur statut (par exemple, "EnCours", "Livré").
+localhost:8091/commandes/delete/2      ===>supprision d'une commande
+localhost:8091/commandes/1     ======>  put update d'une commande
 
-GET localhost:8091/commandes/{id} : Récupère une commande par son ID.
+filtrage +sms téléphonique+ sms par email
 
-PUT localhost:8091/commandes/{id} : Met à jour les informations d'une commande existante.
 
-DELETE localhost:8091/commandes/{id} : Supprime une commande par son ID.
-
-GET localhost:8091/commandes/{statut} : Filtre les commandes en fonction de leur statut (par exemple, "EnCours", "Livré").
